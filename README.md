@@ -74,9 +74,9 @@ The data can be obtained in the file `data/pendulum-CM.csv`.
 
 ## 3. Bayesian Analyisis
 
-Finally, we can obtaine the frequency of the pendulum. The code to apply bayesian analysis is the `code/utils.py` file. The analysis is made to simulate a `live analysis`. In order words, it is made to simulate that the measure of the center of mass position and the computation of the frequency probability distribution are made at the same time. 
+Finally, we can obtain the frequency of the pendulum. The code to apply bayesian analysis is the `code/utils.py` file. The analysis is made to simulate a `live analysis`. In order words, it is made to simulate that the measure of the center of mass position and the computation of the frequency probability distribution are made at the same time. 
 
-With this file we obtain the probability distribution of the amplitudes of the pendulum, and the quantity of interest: the frequency. 
+With this file we obtain the probability distribution of the amplitudes of the pendulum, and the quantity of interest: the frequency. Marginalizing the get the frequency probability distribution. 
 
 The final result: 
 
@@ -86,8 +86,8 @@ And after some time:
 
 https://user-images.githubusercontent.com/105709376/208393175-8a421ce8-e6c2-4211-80dc-c504e011c228.mov
 
-As we can see the future points and the actual points are predicted / calculated as perfect as a measure can be. With some uncertainty (the basic principle of the Bayesian approach) but very little. 
+As we can see the future points and the actual points are predicted / calculated as perfect as a measure can be. With some uncertainty (the basic principle of the Bayesian approach) but very very little. 
 
-Under the hood what is happening is that we are computing the frequency probability distribution and using the frequency that maximizes the probability. 
+Under the hood what is happening is that we are computing the frequency probability distribution and using the frequency that maximizes the probability to compute future and actual points (the same applies to the amplitudes A and B).  
 
 https://user-images.githubusercontent.com/105709376/208393946-c99bd7ac-2d7f-4477-a50f-5d1a341aa70e.mov
