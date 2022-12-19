@@ -91,3 +91,4 @@ As we can see the future points and the actual points are predicted / calculated
 Under the hood what is happening is that we are computing the frequency probability distribution and using the frequency that maximizes the probability to compute future and actual points (the same applies to the amplitudes A and B).  
 
 https://user-images.githubusercontent.com/105709376/208393946-c99bd7ac-2d7f-4477-a50f-5d1a341aa70e.mov
+
