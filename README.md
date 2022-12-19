@@ -92,3 +92,5 @@ Under the hood what is happening is that we are computing the frequency probabil
 
 https://user-images.githubusercontent.com/105709376/208393946-c99bd7ac-2d7f-4477-a50f-5d1a341aa70e.mov
 
+**You can see an example of how bayesian analysis work in the `code/example_bayes.ipynb` file.**
+
