@@ -58,13 +58,36 @@ https://user-images.githubusercontent.com/105709376/208388446-4699dcdb-e62f-4b9e
 Applying the classical discrete formulas to get the center of mass of a physical system: 
 
 $$
-X_{cm} = \frac{1}{M} \sum_{i}^{N} x_i m_i
+X_{cm} = \frac{1}{M} \sum_{i=1}^{N} x_i m_i
 $$
 
 $$
-Y_{cm} \frac{1}{M} \sum_{i}^{M} y_i m_i
+Y_{cm} \frac{1}{M} \sum_{i=1}^{M} y_i m_i
 $$
 
-to the nice round binary pendulum, we get the CM of the pendulum. We will store this data in a `csv` file to begin the bayesian analysis. 
+(where M is the total mass of the system)
+to the nice round binary pendulum, we get the CM of the pendulum. We will store this data in a `csv` file to begin the bayesian analysis.
 
 https://user-images.githubusercontent.com/105709376/208389072-8fd761c6-9df2-4ff7-9b0c-e3a9aef2edb7.mov
+
+The data can be obtained in the file `data/pendulum-CM.csv`. 
+
+## 3. Bayesian Analyisis
+
+Finally, we can obtaine the frequency of the pendulum. The code to apply bayesian analysis is the `code/utils.py` file. The analysis is made to simulate a `live analysis`. In order words, it is made to simulate that the measure of the center of mass position and the computation of the frequency probability distribution are made at the same time. 
+
+With this file we obtain the probability distribution of the amplitudes of the pendulum, and the quantity of interest: the frequency. 
+
+The final result: 
+
+https://user-images.githubusercontent.com/105709376/208393140-1a1d61b3-9dec-4015-9d49-802155ef36ec.mov
+
+And after some time: 
+
+https://user-images.githubusercontent.com/105709376/208393175-8a421ce8-e6c2-4211-80dc-c504e011c228.mov
+
+As we can see the future points and the actual points are predicted / calculated as perfect as a measure can be. With some uncertainty (the basic principle of the Bayesian approach) but very little. 
+
+Under the hood what is happening is that we are computing the frequency probability distribution and using the frequency that maximizes the probability. 
+
+https://user-images.githubusercontent.com/105709376/208393946-c99bd7ac-2d7f-4477-a50f-5d1a341aa70e.mov
